@@ -1,0 +1,139 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color:  rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #ffffff,#042446 );
+  background-repeat: repeat-x;
+  z-index: 1;
+}
+img{
+  height: 50px;
+  line-height: 50px;
+  padding-left: 5%;
+  position: sticky;
+  top: 0;
+}
+header li{
+  list-style: none;
+  display: inline-block;
+  line-height: 50px;
+  padding-right: 25px;
+  position: sticky;
+  top: 0;
+}
+ul li a{
+  text-decoration: none;
+  padding: 12px 30px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 6px;
+}
+
+ul li a:hover{
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+}
+.home{
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-image: url(/img/backweb.png);
+  background-size: cover;
+}
+.home img{
+  position: absolute;
+  height: 950px;
+  left: 75%;
+  top: 52.5%;
+  transform: translate(-50%, -50%);
+}
+@font-face {
+  font-family: azonix ;
+  src: url(/fonts/Azonix-1VB0.otf);
+}
+@font-face {
+  font-family: Neon Rave;
+  src: url(/fonts/Neon\ Rave.otf);
+}
+.Introduction{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+   color: white;
+  font-weight: bold;
+}
+.Introduction h2{
+  font-family: azonix;
+  font-size: 45px;
+}
+@keyframes color {
+  0% {
+    color: rgb(0, 217, 255);
+  }
+  50% {
+    color: rgb(0, 0, 0);
+  }
+  100% {
+    color: rgb(252, 0, 0);
+  }
+}
+.Introduction h1 span{
+  font-family: Neon Rave;
+  -webkit-text-stroke: 1px #ffffff;
+  color: red;
+  animation: color 3s ease-in-out infinite;
+}
+.Introduction h4{
+  font-size: 40px;
+}
+.about-me{
+  width: 100%;
+  padding: 100px 0px;
+  background: radial-gradient(circle, #ffffff, #042446);
+}
+.about-me img{
+  height: auto;
+  width: 500px;
+}
+.about-txt{
+  width: 550px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-txt h2{
+  color: red;
+  text-transform: capitalize;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.about-txt p{
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: bolder;
+}
